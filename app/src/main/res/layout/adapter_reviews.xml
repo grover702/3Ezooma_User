@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_5dp"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:layout_marginRight="@dimen/dimen_5dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_5dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgReviewUser"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:src="@drawable/profile_back" />
+
+    <RelativeLayout
+        android:id="@+id/rlReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:background="@drawable/gray_curved_background"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingTop="@dimen/dimen_3dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:paddingBottom="@dimen/dimen_3dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgRating"
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/star" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgRating"
+            android:text="4.5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_toStartOf="@+id/rlReviews"
+        android:includeFontPadding="false"
+        android:layout_toEndOf="@+id/imgReviewUser"
+        android:text="Ahmed Ashraf"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp"
+        android:fontFamily="@font/cairo_bold"
+        app:fontFamily="@font/cairo_bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtUserReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:layout_toStartOf="@+id/rlReviews"
+        android:layout_toEndOf="@+id/imgReviewUser"
+        app:fontFamily="@font/roboto_regular"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+        android:textColor="@color/description"
+        android:textSize="@dimen/text_12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.controllers.activities.homeScreens.OrderStatusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_30"
+            android:fontFamily="@font/cairo_bold"
+            android:text="Order No #1801023"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18sp"
+            app:fontFamily="@font/cairo_bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:layout_marginEnd="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgOrderPlaced"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_check_circle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/imgOrderPlaced"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Order placed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/roboto_bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:background="@color/gray_clr" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgOrderConfirmed"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_check_circle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/imgOrderConfirmed"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Order confirmed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/roboto_bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:background="@color/gray_clr" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPreparingOrder"
+                android:layout_width="@dimen/text_18sp"
+                android:layout_height="@dimen/text_18sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_check_circle_gray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/imgPreparingOrder"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Preparing order"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/roboto_bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:background="@color/gray_clr" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgOrderTomorrow"
+                android:layout_width="@dimen/text_18sp"
+                android:layout_height="@dimen/text_18sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_check_circle_gray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/imgOrderTomorrow"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Order will be delivered tomorrow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/roboto_bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:background="@color/gray_clr" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgOrderOnWay"
+                android:layout_width="@dimen/text_18sp"
+                android:layout_height="@dimen/text_18sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_check_circle_gray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/imgOrderOnWay"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Order on the way"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/roboto_bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:background="@color/gray_clr" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgOrderDelivered"
+                android:layout_width="@dimen/text_18sp"
+                android:layout_height="@dimen/text_18sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_check_circle_gray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/imgOrderDelivered"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Order delivered"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/roboto_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

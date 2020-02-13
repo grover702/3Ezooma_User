@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Ezooma</string>
+    <string name="_3ezooma">3ezooma</string>
+    <string name="txt_don_t_have_an_account_sign_up"><font fgcolor='#000000'>Don\'t have an account?</font><font fgcolor='#FF4713'> Sign up.</font></string>
+
+    <string name="login_with_google">Login with google</string>
+    <string name="login_with_facebook">Continue with Facebook</string>
+    <string name="login">Login</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="txt_or_sign_up_with_a_social_media">OR SIGN UP WITH A SOCIAL MEDIA</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_confirm_password">Confirm Password</string>
+    <string name="txt_sign_up">Create an account</string>
+    <string name="txt_already_have_an_account_log_in"><font fgcolor="#000000">Already have an Account?</font> <font fgcolor="#F86C03">Login</font></string>
+    <string name="register">Register</string>
+    <string name="change_password">Change Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="we_just_need_your_registered_email_id_to_sent_your_password_reset_instructions">We just need your registered Email Id to sent your password reset instructions.</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_up_using_email">Sign up using email</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="create_account">Create account</string>
+    <string name="add_npicture">Add Picture</string>
+    <string name="about_us">About us</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_my_orders">My Orders</string>
+    <string name="notifications">Notifications</string>
+    <string name="help">Help</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="find_caterers">Find Caterers</string>
+    <string name="trending_caterers">Trending Caterers</string>
+    <string name="see_all_37">See all (37)</string>
+    <string name="categories">Categories</string>
+    <string name="open">Open</string>
+    <string name="view_my_cart">View My Cart</string>
+    <string name="_2_delivery_days">2 delivery days</string>
+    <string name="min_15_persons">Min. 15 persons</string>
+    <string name="photos">Photos</string>
+    <string name="menu">Menu</string>
+    <string name="nav_change_password">Change password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="confirm_password">Confirm Password</string>
+</resources>

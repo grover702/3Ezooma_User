@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:layout_marginEnd="@dimen/dimen_12dp"
+    android:layout_marginBottom="@dimen/dimen_12dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dimen_5dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgItemImage"
+            android:layout_width="230dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/food_one" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/white_curved_background"
+            android:paddingEnd="@dimen/dimen_10dp"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:paddingBottom="@dimen/dimen_3dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open"
+                android:includeFontPadding="false"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_10sp"
+                android:fontFamily="@font/roboto_regular"
+                app:fontFamily="@font/roboto_regular"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:background="@drawable/white_rounded_corners_background"
+            android:paddingLeft="@dimen/dimen_6dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:paddingRight="@dimen/dimen_6dp"
+            android:paddingBottom="@dimen/dimen_3dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgRating"
+                android:layout_width="@dimen/dimen_12dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/star" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_3dp"
+                android:layout_toEndOf="@+id/imgRating"
+                android:text="4.5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10sp"
+                android:fontFamily="@font/roboto_regular"
+                app:fontFamily="@font/roboto_regular" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlItemDetails"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgItemImage"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_toStartOf="@+id/rlFoodType"
+                android:fontFamily="@font/cairo_bold"
+                android:text="Mama's Kitchen"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/cairo_bold" />
+
+            <RelativeLayout
+                android:id="@+id/rlFoodType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_3dp"
+                android:layout_toStartOf="@+id/rlDistance"
+                android:background="@drawable/orange_curved_background"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_3dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:paddingEnd="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtFoodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Food"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/roboto_regular"
+                    app:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_5dp"
+                android:background="@drawable/green_curved_background"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dimen_6dp"
+                android:paddingTop="@dimen/dimen_3dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:paddingEnd="@dimen/dimen_3dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_centerInParent="true"
+                    android:text="12km"
+                    android:fontFamily="@font/roboto_regular"
+                    app:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_8dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlItemDetails"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/text_10sp"
+            android:fontFamily="@font/roboto_regular"
+            app:fontFamily="@font/roboto_regular"
+            android:text="Cairo Festival City Mall,New Cairo"
+            android:textColor="@color/description" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

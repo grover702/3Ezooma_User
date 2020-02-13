@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.controllers.activities.homeScreens.ChangeLocationActivity">
+
+    <include layout="@layout/app_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAboutLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locate your address on the map to make it easier to reach you."
+                android:textColor="@color/dark_gray"
+                app:fontFamily="@font/roboto_regular"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtAboutLocation"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/maps" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvArea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/map"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Area"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStreet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvArea"
+
+                android:layout_marginTop="@dimen/dimen_10dp"
+
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Street"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvStreet"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtBuilding"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Building"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFloor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvBuilding"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Floor"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAdditionalDetails"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvFloor"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtAdditionalDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Additional details (Optional)"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvAdditionalDetails"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/green_curved_background"
+                android:text="Add address"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/cairo_bold"
+                app:fontFamily="@font/cairo_bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

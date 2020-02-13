@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlFoodMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingBottom="@dimen/dimen_5dp">
+
+        <RelativeLayout
+            android:id="@+id/cvMenuFood"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/opaque_green_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_12dp"
+                android:paddingRight="@dimen/dimen_12dp"
+                android:text="−"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOrderCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/txtMinus"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_8dp"
+                android:paddingRight="@dimen/dimen_8dp"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/txtOrderCount"
+                android:background="@drawable/opaque_green_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_12dp"
+                android:paddingRight="@dimen/dimen_12dp"
+                android:text="+"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvMenuFood"
+            android:layout_alignParentEnd="true"
+
+            android:text="EGP 600"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            app:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="@dimen/dimen_8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMenuFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toStartOf="@+id/cvMenuFood"
+            android:fontFamily="@font/cairo_bold"
+            android:includeFontPadding="false"
+            android:text="Rigattoni Casserole"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            app:fontFamily="@font/cairo_bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMenuFoodDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMenuFoodName"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toStartOf="@+id/cvMenuFood"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Lorem Ipsum is simply dummy text of the printing"
+            android:textColor="@color/description"
+            android:textSize="@dimen/text_14sp"
+            app:fontFamily="@font/roboto_regular" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMenuFoodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMenuFoodDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toStartOf="@+id/cvMenuFood"
+            android:text="EGP 300"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rlFoodMenu"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:background="@color/view_color" />
+</RelativeLayout>
